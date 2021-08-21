@@ -1,0 +1,30 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 23, in script
+    show fox neutral left
+Exception: Image 'fox neutral' does not accept attributes 'left'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 23, in script
+    show fox neutral left
+  File "C:\Users\lucas.dias\Downloads\renpy-7.4.8-sdk/renpy/ast.py", line 1192, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\lucas.dias\Downloads\renpy-7.4.8-sdk/renpy/ast.py", line 1162, in show_imspec
+    atl=atl)
+  File "C:\Users\lucas.dias\Downloads\renpy-7.4.8-sdk/renpy/exports.py", line 744, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\lucas.dias\Downloads\renpy-7.4.8-sdk/renpy/display/image.py", line 409, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\lucas.dias\Downloads\renpy-7.4.8-sdk/renpy/display/core.py", line 390, in _duplicate
+    args.extraneous()
+  File "C:\Users\lucas.dias\Downloads\renpy-7.4.8-sdk/renpy/display/core.py", line 271, in extraneous
+    " ".join(self.args),
+Exception: Image 'fox neutral' does not accept attributes 'left'.
+
+Windows-10-10.0.19041
+Ren'Py 7.4.8.1895
+Delphina e Fox 1.0
+Fri Aug 20 23:14:20 2021
