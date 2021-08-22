@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 100: expected statement.
-    arvore = 1
-           ^
+File "game/script.rpy", line 10: expected '=' not found.
+    define moi
+              ^
 
 Ren'Py Version: Ren'Py 7.4.5.1648
-Sun Aug 22 16:15:07 2021
+Sun Aug 22 18:23:34 2021

@@ -23,13 +23,8 @@ screen crimeFox:
         focus_mask True
         action [Show("crimeDelphina"), Hide("crimeFox"), Hide("fox_neutro.png")]
 
-    textbutton "Mapa" action [Show("delegacia")] 
-        # xanchor 0.5
-        # yanchor 0.4
-        # xpos 0.95
-        # ypos 0.1
-        # auto "item_%s.png"
-        # focus_mask True
+    vbox xalign 0.95 yalign 0.1:
+        textbutton "Mapa" action [Show("delegacia")] 
 
     add "fox_neutro.png" at Position(xpos = 0.2, xanchor=0.5, ypos=0.7, yanchor=0.4)
     
@@ -59,13 +54,8 @@ screen crimeDelphina:
         focus_mask True
         action [Show("crimeFox"), Hide("crimeDelphina"), Hide("delphina_neutro.png")]
 
-    textbutton "Mapa" action [Show("delegacia")] 
-        # xanchor 0.5
-        # yanchor 0.4
-        # xpos 0.95
-        # ypos 0.1
-        # auto "item_%s.png"
-        # focus_mask True
+    vbox xalign 0.95 yalign 0.1:
+         textbutton "Mapa" action [Show("delegacia")] 
 
     add "delphina_neutro.png" at Position(xpos = 0.2, xanchor=0.5, ypos=0.6, yanchor=0.4)  
 
@@ -93,9 +83,7 @@ screen board:
         text "Pistas Fox:"
         text "[pistasFox]"
 
-    textbutton "Mapa" action [Hide("crimeFox"), Hide("board"), Hide("/imagebuttons/board idle.png"), Hide("crimeDelphina"), Hide("bg board.png"), Jump("continuarFox"),] 
-        # xanchor 0.5
-        # yanchor 0.4
-        # xpos 0.95
-        # ypos 0.1
+    vbox xalign 0.95 yalign 0.1:
+        textbutton "Mapa" action [Hide("crimeFox"), Hide("board"), Hide("/imagebuttons/board idle.png"), Hide("crimeDelphina"), Hide("bg board.png"), Jump("continuarFox"),] 
+
         
