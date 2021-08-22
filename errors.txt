@@ -2,11 +2,9 @@
 errors listed below, and try again.
 
 
-The label start is defined twice, at File "game/script.rpy", line 11:
-label start:
-and File "game/script.rpy", line 36:
-label start:
+File "game/scenes.rpy", line 89: u'teste' is not a keyword argument or valid child for the add statement.
+    add bg teste
+                ^
 
-
-Ren'Py Version: Ren'Py 7.4.8.1895
-Fri Aug 20 23:24:08 2021
+Ren'Py Version: Ren'Py 7.4.5.1648
+Sun Aug 22 15:50:34 2021
