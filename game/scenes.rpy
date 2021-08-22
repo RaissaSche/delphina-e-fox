@@ -23,14 +23,13 @@ screen crimeFox:
         focus_mask True
         action [Show("crimeDelphina"), Hide("crimeFox"), Hide("fox_neutro.png")]
 
-    imagebutton:
-        xanchor 0.5
-        yanchor 0.4
-        xpos 0.95
-        ypos 0.1
-        auto "item_%s.png"
-        focus_mask True
-        action [Show("delegacia")]    
+    textbutton "Mapa" action [Show("delegacia")] 
+        # xanchor 0.5
+        # yanchor 0.4
+        # xpos 0.95
+        # ypos 0.1
+        # auto "item_%s.png"
+        # focus_mask True
 
     add "fox_neutro.png" at Position(xpos = 0.2, xanchor=0.5, ypos=0.7, yanchor=0.4)
     
@@ -60,14 +59,13 @@ screen crimeDelphina:
         focus_mask True
         action [Show("crimeFox"), Hide("crimeDelphina"), Hide("delphina_neutro.png")]
 
-    imagebutton:
-        xanchor 0.5
-        yanchor 0.4
-        xpos 0.95
-        ypos 0.1
-        auto "item_%s.png"
-        focus_mask True
-        action [Show("delegacia")] 
+    textbutton "Mapa" action [Show("delegacia")] 
+        # xanchor 0.5
+        # yanchor 0.4
+        # xpos 0.95
+        # ypos 0.1
+        # auto "item_%s.png"
+        # focus_mask True
 
     add "delphina_neutro.png" at Position(xpos = 0.2, xanchor=0.5, ypos=0.6, yanchor=0.4)  
 
@@ -86,13 +84,18 @@ screen delegacia:
 
 screen board: 
     add "bg board.png"
-    add "/imagebuttons/board idle.png"
+    
+    vbox:
+        xalign 0.5
+        yalign 0.5
+        text "Pistas Delphina:"
+        text "[pistasDelphina]"
+        text "Pistas Fox:"
+        text "[pistasFox]"
 
-    imagebutton:
-        xanchor 0.5
-        yanchor 0.4
-        xpos 0.95
-        ypos 0.1
-        auto "item_%s.png"
-        focus_mask True
-        action [Hide("crimeFox"), Hide("board"), Hide("/imagebuttons/board idle.png"), Hide("crimeDelphina"), Hide("bg board.png"), Jump("continuarFox"),] 
+    textbutton "Mapa" action [Hide("crimeFox"), Hide("board"), Hide("/imagebuttons/board idle.png"), Hide("crimeDelphina"), Hide("bg board.png"), Jump("continuarFox"),] 
+        # xanchor 0.5
+        # yanchor 0.4
+        # xpos 0.95
+        # ypos 0.1
+        

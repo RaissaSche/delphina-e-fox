@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scenes.rpy", line 89: u'teste' is not a keyword argument or valid child for the add statement.
-    add bg teste
-                ^
+File "game/script.rpy", line 100: expected statement.
+    arvore = 1
+           ^
 
 Ren'Py Version: Ren'Py 7.4.5.1648
-Sun Aug 22 15:50:34 2021
+Sun Aug 22 16:15:07 2021

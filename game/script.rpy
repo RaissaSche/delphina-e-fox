@@ -10,6 +10,9 @@ define md = Character("Maria Degolada")
 
 define cenaCrimeAtual = 1
 
+define pistasDelphina = [0,0,0]
+define pistasFox = [0,0,0]
+
 image Delphina:
     im.FactorScale("delphina_neutro.png", 0.7)
     xanchor 0.6
@@ -67,7 +70,7 @@ label continuarFox:
 
 label continuarDelphina:
     scene bg crime
-    
+
     hide Martinho
     hide Delphina
     hide textbox
@@ -82,27 +85,33 @@ label continuarDelphina:
 #itens Fox
 label arma:
     "Cliquei na arma"
+    $ pistasFox[0] = 1
     jump continuarFox
     
 label camera:
     "Cliquei na camera"
+    $ pistasFox[1] = 1
     jump continuarFox  
 
 label quem:
     "Cliquei em quem"
+    $ pistasFox[2] = 1
     jump continuarFox      
 
 #itens Delphina
 label arvore:
-    "Cliquei na arvore"   
+    "Cliquei na arvore"  
+    $ pistasDelphina[0] = 1
     jump continuarDelphina
 
 label espirito:
-    "Cliquei no espirito"   
+    "Cliquei no espirito"  
+    $ pistasDelphina[1] = 1 
     jump continuarDelphina
 
 label energia:
-    "Cliquei na energia"   
+    "Cliquei na energia"  
+    $ pistasDelphina[2] = 1 
     jump continuarDelphina
 
 label fim:
